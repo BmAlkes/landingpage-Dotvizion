@@ -1,55 +1,78 @@
-# React + TypeScript + Vite
+# DotVizion Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **DotVizion Landing Page** repository! This project is designed to showcase our services and capture leads effectively, ensuring a seamless experience for potential clients.
 
-Currently, two official plugins are available:
+## 🚀 About DotVizion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+DotVizion is a technology studio specializing in:
+- Custom website development
+- Web applications
+- SEO optimization
+- Graphic design
 
-## Expanding the ESLint configuration
+Our mission is reflected in our slogan: **"Designing with precision, innovation with vision"**. This landing page serves as the entry point for new clients, offering clear information about our services and guiding them to the next step.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Features
+- **Modern & Responsive Design** - Ensures a seamless experience across all devices.
+- **Lead Capture Forms** - Directs users to specific service pages based on their needs.
+- **Fast Performance** - Optimized for speed and user experience.
+- **SEO Optimized** - Structured to improve visibility on search engines.
+- **Multilingual Support** - Available in English and Hebrew.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** PostgreSQL (for form submissions and lead storage)
+- **Deployment:** Vercel / AWS
+
+## 📂 Project Structure
+```
+/ ── public/           # Static assets
+   ├── components/     # Reusable UI components
+   ├── pages/          # Main application pages
+   ├── styles/         # Global styles
+   ├── utils/          # Helper functions
+   ├── server/         # Backend API (if applicable)
+   ├── README.md       # Project documentation
+   └── package.json    # Dependencies and scripts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📌 Installation & Setup
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/yourusername/dotvizion-landing.git
+   cd dotvizion-landing
+   ```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+3. **Start the development server**
+   ```sh
+   npm run dev
+   ```
+4. **Build for production**
+   ```sh
+   npm run build
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌎 Deployment
+- **Vercel:**
+  ```sh
+  vercel
+  ```
+- **Docker (Optional):**
+  ```sh
+  docker build -t dotvizion-landing .
+  docker run -p 3000:3000 dotvizion-landing
+  ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# landingpage-Dotvizion
+## 📞 Contact
+For any questions or collaboration opportunities, reach out to us:
+- 🌐 Website: [dotvizion.com](https://dotvizion.com)
+- 📧 Email: contact@dotvizion.com
+- 📱 Socials: LinkedIn, Facebook
+
+---
+
+Made with ❤️ by DotVizion Team
