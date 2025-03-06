@@ -21,8 +21,7 @@ Our mission is reflected in our slogan: **"Designing with precision, innovation 
 
 ## 🛠️ Tech Stack
 - **Frontend:** React, Next.js, Tailwind CSS
-- **Backend:** Node.js, Express.js
-- **Database:** PostgreSQL (for form submissions and lead storage)
+
 - **Deployment:** Vercel / AWS
 
 ## 📂 Project Structure
