@@ -1,0 +1,240 @@
+.contact-section {
+    background-color: #0d1117;
+    padding: 5rem 0;
+    color: white;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .contact-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Transform Business Banner */
+  .transform-business-banner {
+    padding: 4rem 2rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, rgba(14, 165, 233, 0.15), rgba(59, 130, 246, 0.15), rgba(14, 165, 233, 0.15));
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  
+  .transform-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title-light {
+    color: #e5e7eb;
+  }
+  
+  .title-blue {
+    background: linear-gradient(to right, #56d0ff, #4285FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .title-orange {
+    background: linear-gradient(to right, #ff8a00, #ff5e5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .transform-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .learn-more-btn {
+    background: linear-gradient(to right, #ff8a00, #ff5e5e);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
+  }
+  
+  .learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 138, 0, 0.4);
+  }
+  
+  .arrow-icon {
+    margin-right: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Contact Form Container */
+  .contact-form-container {
+    background-color: #161b22;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #161b22;
+    border: 1px solid #2d3748;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #56d0ff;
+    box-shadow: 0 0 0 2px rgba(86, 208, 255, 0.2);
+  }
+  
+  .form-textarea {
+    resize: none;
+    min-height: 120px;
+  }
+  
+  .form-submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .send-message-btn {
+    background: linear-gradient(to right, #56d0ff, #4285FF);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(86, 208, 255, 0.3);
+  }
+  
+  .send-message-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(86, 208, 255, 0.4);
+  }
+  
+  /* Contact Button */
+  .contact-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .contact-us-btn {
+    background: linear-gradient(to right, #ff8a00, #56d0ff);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(86, 208, 255, 0.2);
+  }
+  
+  .contact-us-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(86, 208, 255, 0.3);
+  }
+  
+  .mail-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Footer Note */
+  .footer-note {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    padding: 0 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .transform-title {
+      font-size: 2rem;
+    }
+    
+    .transform-business-banner {
+      padding: 3rem 1.5rem;
+    }
+    
+    .contact-form-container {
+      padding: 1.5rem;
+    }
+    
+    .form-submit {
+      justify-content: center;
+    }
+    
+    .footer-note {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .transform-title {
+      font-size: 1.75rem;
+    }
+    
+    .transform-subtitle {
+      font-size: 1rem;
+    }
+    
+    .learn-more-btn,
+    .send-message-btn,
+    .contact-us-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }

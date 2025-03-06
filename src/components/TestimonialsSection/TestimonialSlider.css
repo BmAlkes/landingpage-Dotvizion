@@ -1,0 +1,274 @@
+.testimonial-section {
+  padding: 5rem 0 7rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.headerTestimonial {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  /* What Our Clients Say */
+  /* Medium/Title 1 */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 130%;
+  /* identical to box height, or 73px */
+  text-align: center;
+
+  background: radial-gradient(
+    39.49% 258.56% at 50% 50%,
+    #fc8814 0%,
+    #6fcfed 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  margin-bottom: 1rem;
+}
+
+.title-gold {
+  color: #ffc261;
+}
+
+.title-blue {
+  color: #56d0ff;
+}
+
+.quote-marks {
+  position: absolute;
+  right: -2rem;
+  top: -1rem;
+  font-size: 5rem;
+  color: #4d5057;
+  opacity: 0.5;
+  font-family: "Georgia", serif;
+  line-height: 1;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+/* Estilos para o slide */
+.slide {
+  padding: 0.75rem;
+}
+
+.testimonial-card {
+  background-color: #15191f;
+  border-radius: 1rem;
+  border: 1px solid #292e38;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-quote {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.author-role {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0.2rem 0 0 0;
+}
+
+.author-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #292e38;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para o Slick Slider */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.slick-slide > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para as setas de navegação */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50%;
+}
+
+.slick-prev {
+  left: -5px;
+}
+
+.slick-next {
+  right: -5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Estilos para os dots de navegação */
+.slick-dots {
+  bottom: -50px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.slick-active .custom-dot {
+  background-color: #56d0ff;
+  width: 12px;
+  height: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .quote-marks {
+    right: -1.5rem;
+    top: -0.8rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    padding: 4rem 0 6rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .quote-marks {
+    right: -1.2rem;
+    top: -0.5rem;
+    font-size: 3.5rem;
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    text-align: center !important;
+  }
+
+  .quote-marks {
+    display: none;
+  }
+
+  .testimonial-content {
+    padding: 1.2rem;
+  }
+}

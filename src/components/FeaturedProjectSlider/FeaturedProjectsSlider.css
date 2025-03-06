@@ -1,0 +1,191 @@
+.featured-projects-slider {
+   
+    padding: 5rem 0;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .headerSlider {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .title-light {
+    color: #a3e0f5;
+  }
+  
+  .title-gold {
+    color: #ffc261;
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .slider-container {
+    margin: 0 -15px;
+  }
+  
+  /* Estilos para os slides */
+  .slide {
+    padding: 15px;
+  }
+  
+  .project-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #171b22;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .project-info {
+    padding: 1.2rem;
+    position: relative;
+    background-color: #171b22;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-category {
+    font-size: 0.95rem;
+    color: #a3e0f5;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .view-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+  }
+  
+  .view-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .view-icon {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Estilos para as setas do slick */
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: -10px;
+  }
+  
+  .slick-next {
+    right: -10px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Estilos para os dots do slick */
+  .slick-dots {
+    bottom: -40px;
+  }
+  
+  .slick-dots li button:before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #a3e0f5;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    .title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .featured-projects-slider {
+      padding: 4rem 0;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .project-image {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    .slider-container {
+      margin: 0 -5px;
+    }
+    
+    .slide {
+      padding: 5px;
+    }
+  }
