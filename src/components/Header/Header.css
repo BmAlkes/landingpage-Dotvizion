@@ -1,0 +1,129 @@
+.header {
+    background-color: #0d1117;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    direction: rtl;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #56d0ff;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #161b22;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .mobile-menu.open {
+    display: flex;
+  }
+  
+  .mobile-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-nav-link:hover {
+    color: #56d0ff;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (min-width: 768px) {
+    .header {
+      padding: 1rem 3rem;
+    }
+    
+    .desktop-menu {
+      display: flex;
+    }
+    
+    .mobile-menu-button {
+      display: none;
+    }
+    
+    .logo {
+      width: 180px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header {
+      padding: 1rem 4rem;
+    }
+    
+    .logo {
+      width: 240px;
+    }
+    
+    .nav-link {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .header {
+      padding: 0.75rem 1rem;
+    }
+    
+    .logo {
+      width: 120px;
+    }
+  }

@@ -1,152 +1,355 @@
-.about-container {
-    display: flex;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
+/* AboutUsSection.css */
+#who-we-are {
+  background-color: #0d1117;
+  color: white;
+  direction: rtl;
+}
 
-    align-items: center;
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  padding: 4rem 6%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at left bottom, rgba(128, 0, 128, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at right top, rgba(0, 128, 255, 0.3) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-left: 2rem;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #56d0ff;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 570px;
+  margin-bottom: 3rem;
+  text-align: right;
+}
+
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 120px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ff8a00;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.learn-more-btn {
+  background: linear-gradient(to right, #ff8a00, #56d0ff);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
+  align-self: flex-start;
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 138, 0, 0.4);
+}
+
+.arrow-icon {
+  margin-right: 0.7rem;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Telas grandes (acima de 1440px) */
+@media (min-width: 1441px) {
+  .about-title {
+    font-size: 4.5rem;
   }
   
-  .about-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(circle at left bottom, rgba(128, 0, 128, 0.4) 0%, transparent 50%),
-      radial-gradient(circle at right top, rgba(0, 128, 255, 0.3) 0%, transparent 50%);
-    pointer-events: none;
+  .about-description {
+    font-size: 1.3rem;
+    max-width: 700px;
   }
   
-  .about-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5% 6%;
-    position: relative;
-    z-index: 1;
+  .stat-box {
+    padding: 2rem;
+    min-width: 150px;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+  }
+  
+  .stat-description {
+    font-size: 1.1rem;
+  }
+  
+  .learn-more-btn {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Desktops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .about-title {
+    font-size: 3.2rem;
+  }
+  
+  .about-description {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablets e notebooks (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-container {
+    padding: 3rem 4%;
   }
   
   .about-title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: #56d0ff;
-    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
   }
   
   .about-description {
     font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 570px;
-    margin-bottom: 3rem;
+    max-width: 480px;
   }
   
   .stats-container {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    flex-wrap: wrap;
   }
   
   .stat-box {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    padding: 1.5rem;
-    min-width: 120px;
+    padding: 1.2rem;
+    min-width: 110px;
   }
   
   .stat-number {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #ff8a00;
-    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+  }
+}
+
+/* Tablets (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 3rem 2rem;
+    gap: 2rem;
   }
   
-  .stat-description {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
+  .about-content {
+    padding-left: 0;
+    align-items: center;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .about-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  .stats-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    flex: 1;
+    min-width: 100px;
+    max-width: 150px;
   }
   
   .learn-more-btn {
-    background: linear-gradient(to right, #ff8a00, #56d0ff);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.6rem;
-    border-radius: 2rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 15px rgba(255, 138, 0, 0.3);
-    align-self: flex-start;
-  }
-  
-  .learn-more-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 138, 0, 0.4);
-  }
-  
-  .arrow-icon {
-    margin-right: 0.7rem;
+    align-self: center;
   }
   
   .about-image {
-    flex: 1;
-  
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 24p;
-    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* Celulares (376px - 600px) */
+@media (min-width: 376px) and (max-width: 600px) {
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    min-height: auto;
   }
   
-  
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .about-title {
-      font-size: 3rem;
-    }
-    
-    .stats-container {
-      flex-wrap: wrap;
-    }
+  .about-content {
+    padding-left: 0;
+    align-items: center;
   }
   
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column-reverse;
-    }
-    
-    .about-content {
-      padding: 4rem 2rem;
-    }
-    
-    .about-title {
-      font-size: 2.5rem;
-      text-align: center;
-    }
-    
-    .about-description {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .stats-container {
-      justify-content: center;
-    }
-    
-    .learn-more-btn {
-      align-self: center;
-    }
-    
-    .about-image {
-      min-height: 50vh;
-    }
+  .about-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
+  
+  .about-description {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .stat-box {
+    width: 100%;
+  }
+  
+  .learn-more-btn {
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .about-image {
+    width: 100%;
+  }
+}
+
+/* Celulares pequenos (até 375px) */
+@media (max-width: 375px) {
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    min-height: auto;
+  }
+  
+  .about-content {
+    padding-left: 0;
+    align-items: center;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .about-description {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .stat-box {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-description {
+    font-size: 0.8rem;
+  }
+  
+  .learn-more-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85rem;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+  }
+}

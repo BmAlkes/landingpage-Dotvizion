@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
+import './Header.css';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -8,35 +9,40 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 px-6 md:px-12 header ">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
+    <header className="header" dir="rtl">
+      <div className="container">
+        <div className="navbar">
           {/* Logo */}
-          <div className="flex items-center">
-          <img src="https://res.cloudinary.com/landingpage2/image/upload/v1732554815/5000x5000-3-removebg-preview_jxhv2o.png" className='w-60' alt="logo" />
+          <div className="logo-container">
+            <img 
+              src="https://res.cloudinary.com/landingpage2/image/upload/v1739727604/5000x5000-3-removebg-preview_qvlhb9.webp" 
+              className="logo" 
+              alt="logo" 
+            />
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-white hover:text-brand-blue transition-colors">Home</a>
-            <a href="#who-we-are" className="text-white hover:text-brand-blue transition-colors">Who we are</a>
-            <a href="#work-projects" className="text-white hover:text-brand-blue transition-colors">Work Projects</a>
-            <a href="#testimonial" className="text-white hover:text-brand-blue transition-colors">Testimonial</a>
-            <a href="#contact" className="text-white hover:text-brand-blue transition-colors">Contact</a>
+          <nav className="desktop-menu">
+            <a href="#home" className="nav-link">ראשי</a>
+            <a href="#who-we-are" className="nav-link">מי אנחנו</a>
+            <a href="#work-projects" className="nav-link">פרויקטים</a>
+            <a href="#testimonial" className="nav-link">המלצות</a>
+            <a href="#contact" className="nav-link">צור קשר</a>
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="mobile-menu-button">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              aria-label="Toggle menu"
+              className="menu-button"
             >
               {isMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -45,17 +51,13 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 mr-auto  bg-dark-secondary rounded-lg">
-            <div className="flex flex-col  space-y-4 px-4">
-              <a href="#home" className="text-white hover:text-brand-blue transition-colors">Home</a>
-              <a href="#who-we-are" className="text-white hover:text-brand-blue transition-colors">Who we are</a>
-              <a href="#work-projects" className="text-white hover:text-brand-blue transition-colors">Work Projects</a>
-              <a href="#testimonial" className="text-white hover:text-brand-blue transition-colors">Testimonial</a>
-              <a href="#contact" className="text-white hover:text-brand-blue transition-colors">Contact</a>
-            </div>
-          </div>
-        )}
+        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+          <a href="#home" className="mobile-nav-link">ראשי</a>
+          <a href="#who-we-are" className="mobile-nav-link">מי אנחנו</a>
+          <a href="#work-projects" className="mobile-nav-link">פרויקטים</a>
+          <a href="#testimonial" className="mobile-nav-link">המלצות</a>
+          <a href="#contact" className="mobile-nav-link">צור קשר</a>
+        </div>
       </div>
     </header>
   );

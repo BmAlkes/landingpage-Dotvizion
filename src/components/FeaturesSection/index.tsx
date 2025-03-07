@@ -6,10 +6,9 @@ const ServicesSection = () => {
       <div className="services-container">
         <div className="services-header">
           <h2 className="services-title">
-            Looking for Website Development
+          מחפשים פיתוח אתרים
             <br />
-            or Digital Growth ?
-          </h2>
+              או צמיחה דיגיטלית ?          </h2>
         </div>
 
         <div className="services-grid">
@@ -21,12 +20,12 @@ const ServicesSection = () => {
                 alt=""
               />
             </div>
-            <h3 className="service-title">Custom Web Development</h3>
+            <h3 className="service-title">פיתוח אתרים בהתאמה אישית</h3>
             <p className="service-description">
-              Professional, high-performance websites tailored to your brand.
+            אתרים מקצועיים ובעלי ביצועים גבוהים, מותאמים למותג שלך.
             </p>
             <a href="#" className="service-link">
-              Build Your Website
+            בנו את האתר שלכם
             </a>
           </div>
 
@@ -38,12 +37,12 @@ const ServicesSection = () => {
                 alt="bulb"
               />
             </div>
-            <h3 className="service-title">Branding & Creative Design</h3>
+            <h3 className="service-title">מיתוג ועיצוב קריאטיבי</h3>
             <p className="service-description">
-              Stand out with visually stunning brand identities & designs.
+            הבלט עם זהויות מותג ועיצובים מרהיבים וויזואלית.
             </p>
             <a href="#" className="service-link">
-              Get Our UI/UX Work
+            קבלו את עבודות ה-UI/UX שלנו
             </a>
           </div>
 
@@ -55,12 +54,12 @@ const ServicesSection = () => {
                 alt=""
               />
             </div>
-            <h3 className="service-title">Web Application</h3>
+            <h3 className="service-title">אפליקציות ווב</h3>
             <p className="service-description">
-              Boost your search rankings & drive targeted traffic to your site.
+            אפליקציות ווב מותאמות אישית שמביאות פתרונות טכנולוגיים מתקדמים לחווית משתמש מעולה.
             </p>
             <a href="#" className="service-link">
-              Improve Your Online Presence
+            שדרג את הנוכחות הדיגיטלית שלך
             </a>
           </div>
 
@@ -72,12 +71,12 @@ const ServicesSection = () => {
                 alt="graphic"
               />
             </div>
-            <h3 className="service-title">Online Store</h3>
+            <h3 className="service-title">חנות אונליין</h3>
             <p className="service-description">
-              Promotional strategies to scale your business effectively.
+            חנות אונליין מותאמת אישית שמאפשרת לך למכור בקלות וביעילות. עם עיצוב אינטואיטיבי, פתרונות תשלום מאובטחים, וחווית משתמש מושלמת, החנות שלך תהיה מוכנה להצלחה בעולם הדיגיטלי.
             </p>
             <a href="#" className="service-link">
-              Get a Free Strategy Call
+            התחל למכור אונליין היום
             </a>
           </div>
         </div>

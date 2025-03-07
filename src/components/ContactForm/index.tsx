@@ -39,32 +39,32 @@ const ContactForm = () => {
           {/* Transform text section */}
           <div className="transform-business-banner">
             <h2 className="transform-title">
-              <span className="title-light">Ready to</span> <span className="title-blue">Transform</span>
+              <span className="title-light">מוכנים </span> <span className="title-blue">לשדרג את</span>
               <br />
-              <span className="title-light">Your</span> <span className="title-orange">Business?</span>
+              <span className="title-light">העסק </span> <span className="title-orange">שלכם ?</span>
             </h2>
             <p className="transform-subtitle">
-              Let's build something amazing together.
+            בואו נבנה משהו מדהים יחד.
               <br />
-              Get in touch today!
+              צרו קשר עוד היום!
             </p>
             <a href="https://www.dotvizion.com/about" target='_blank' rel="noreferrer">
             <button className="learn-more-btn">
-              <span className="arrow-icon">←</span> Learn More About Us
+              עוד פרטים עלינו<span className="arrow-icon">←</span> 
             </button>
             </a>
           </div>
 
           {/* Contact Form */}
           <div className="contact-form-container">
-            <h2 className="contact-title">Let Talk</h2>
+            <h2 className="contact-title">בוא נדבר </h2>
             
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">
                 <input
                   type="text"
                   name="name"
-                  placeholder="Name"
+                  placeholder="שם מלא"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -76,7 +76,7 @@ const ContactForm = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="אימייל"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -86,9 +86,9 @@ const ContactForm = () => {
               
               <div className="form-group">
                 <input
-                  type="tel"
+                  type="text"  
                   name="phone"
-                  placeholder="Phone Number"
+                  placeholder="טלפון"
                   value={formData.phone}
                   onChange={handleChange}
                   required
@@ -99,7 +99,7 @@ const ContactForm = () => {
               <div className="form-group">
                 <textarea
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="הודעה שלך"
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
@@ -109,7 +109,7 @@ const ContactForm = () => {
               
               <div className="form-submit">
                 <button type="submit" className="send-message-btn">
-                  <span className="arrow-icon">←</span> Send Message
+                   שלח<span className="arrow-icon">←</span>
                 </button>
               </div>
             </form>
@@ -119,11 +119,11 @@ const ContactForm = () => {
           <div className="contact-btn-wrapper">
               <a href="mailto:info@dotvizion.com">
             <button className="contact-us-btn">
+
+              <span>צור קשר איתנו</span>
               <svg className="mail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-
-              <span>Contact with us</span>
             </button>
               </a>
           </div>
@@ -131,7 +131,7 @@ const ContactForm = () => {
       </div>
       
       <div className="footer-note">
-        <p>These elements help ensure visitors can easily find important information and stay connected with your agency</p>
+        <p>האלמנטים הללו עוזרים להבטיח שהמבקרים יוכלו למצוא בקלות מידע חשוב ולהישאר מחוברים לסוכנות שלך.</p>
       </div>
     </section>
   );

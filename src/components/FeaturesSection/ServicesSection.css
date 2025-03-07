@@ -101,7 +101,7 @@ flex-grow: 0;
   .service-link {
   /* Build Your Website */
 
-width: 142px;
+
 height: 24px;
 font-style: normal;
 font-weight: 400;
@@ -115,7 +115,6 @@ background: radial-gradient(50% 194.39% at 50% 50%, #FC8814 0%, #6FCFED 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
-text-fill-color: transparent;
 
 
 /* Inside auto layout */
@@ -128,7 +127,7 @@ flex-grow: 0;
   .service-link:hover {
     opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
   }
   
   /* Responsividade */

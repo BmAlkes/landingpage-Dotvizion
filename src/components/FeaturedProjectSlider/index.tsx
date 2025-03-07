@@ -214,13 +214,12 @@ const FeaturedProjectsSlider = () => {
       <div className="container">
         <div className="headerSlider">
           <h2 className="title">
-            <span className="title-light">Our </span>
-            <span className="title-gold">Featured Projects</span>
+          הפרויקטים המובילים שלנו
           </h2>
           <p className="subtitle">
-            We bring ideas to life with innovative designs and technology.
+          אנחנו מביאים רעיונות לחיים עם עיצובים וטכנולוגיה חדשנית.
             <br />
-            Explore our latest work!
+            גלו את העבודה האחרונה שלנו!
           </p>
         </div>
         

@@ -21,7 +21,7 @@ export default{
         },
       },
       fontFamily: {
-        sans: ["Urbanist", "sans-serif"],
+        sans: ["Rubik", "sans-serif"],
       },
      
     },

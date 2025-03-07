@@ -77,17 +77,14 @@ const TestimonialSlider = () => {
         <div className="headerTestimonial">
      
           <h2 className="title">
-           What 
-            Our Clients 
-            Say
-         
+          מה הלקוחות שלנו אומרים
           </h2>
          
       
           <p className="subtitle">
-            We bring ideas to life with innovative designs and technology.
+          אנחנו מביאים רעיונות לחיים עם עיצובים וטכנולוגיה חדשנית.
             <br />
-            Explore our latest work!
+            גלו את העבודה האחרונה שלנו!
           </p>
         </div>
         
