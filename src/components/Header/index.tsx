@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import './Header.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navigate = useNavigate()
+
 
   return (
     <header className="header" dir="rtl">
