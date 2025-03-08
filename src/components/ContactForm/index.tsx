@@ -48,7 +48,7 @@ const ContactForm = () => {
               <br />
               צרו קשר עוד היום!
             </p>
-            <a href="https://www.dotvizion.com/about" target='_blank' rel="noreferrer">
+            <a href="https://www.dotvizion.com/about" className='btn' target='_blank' rel="noreferrer">
             <button className="learn-more-btn">
               עוד פרטים עלינו<span className="arrow-icon">←</span> 
             </button>
@@ -130,9 +130,7 @@ const ContactForm = () => {
         </div>
       </div>
       
-      <div className="footer-note">
-        <p>האלמנטים הללו עוזרים להבטיח שהמבקרים יוכלו למצוא בקלות מידע חשוב ולהישאר מחוברים לסוכנות שלך.</p>
-      </div>
+     
     </section>
   );
 };

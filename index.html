@@ -12,6 +12,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>הפוך את הרעיון שלך למציאות דיגיטלית עם DotVizion!</title>
+ <!-- Meta Pixel Code (modificado para verificar consentimento) -->
+<script>
+  // Função para verificar consentimento
+  function hasMarketingConsent() {
+    return document.cookie.includes('meta_pixel_consent=true') || 
+           document.cookie.includes('dotvizion-cookie-consent=true');
+  }
+
+  // Função para inicializar o Meta Pixel
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1382083069906633');
+    fbq('track', 'PageView');
+  }
+
+  // Ouvir pelo evento de consentimento
+  window.addEventListener('metaPixelConsent', function() {
+    initMetaPixel();
+  });
+
+  // Verificar consentimento imediatamente
+  if (hasMarketingConsent()) {
+    initMetaPixel();
+  }
+</script>
+
+<!-- End Meta Pixel Code -->
   </head>
   <body>
     <div id="root"></div>

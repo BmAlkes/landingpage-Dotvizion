@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import './Header.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,17 +9,21 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navigate = useNavigate()
+
   return (
     <header className="header" dir="rtl">
       <div className="container">
         <div className="navbar">
           {/* Logo */}
           <div className="logo-container">
+            <Link to="https://www.dotvizion.com/" target='_blank' rel="noreferrer">
             <img 
               src="https://res.cloudinary.com/landingpage2/image/upload/v1739727604/5000x5000-3-removebg-preview_qvlhb9.webp" 
               className="logo" 
               alt="logo" 
-            />
+              />
+              </Link>
           </div>
 
           {/* Desktop Menu */}
