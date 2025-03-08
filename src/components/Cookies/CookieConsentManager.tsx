@@ -50,7 +50,7 @@ const SimpleCookieConsentBanner: React.FC = () => {
   const [showSettings, setShowSettings] = useState(false);
   
   // Estados para cada tipo de cookie
-  const [essentialCookies, setEssentialCookies] = useState(true); // Sempre true
+  const [_essentialCookies, _setEssentialCookies] = useState(true); // Sempre true
   const [analyticsCookies, setAnalyticsCookies] = useState(true);
   const [marketingCookies, setMarketingCookies] = useState(true);
   
