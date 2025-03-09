@@ -1,0 +1,42 @@
+/* DotVizionToast.css - Estilização adicional para toasts personalizados */
+
+.dotvizion-toast-container .Toastify__toast {
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif; /* Use a fonte da DotVizion */
+    padding: 12px 16px;
+  }
+  
+  .dotvizion-toast-container .Toastify__toast-body {
+    font-weight: 500;
+  }
+  
+  /* Personalização para os diferentes tipos de toast */
+  .dotvizion-toast-container .Toastify__toast--success {
+    box-shadow: 0 4px 12px rgba(0, 204, 136, 0.2);
+  }
+  
+  .dotvizion-toast-container .Toastify__toast--error {
+    box-shadow: 0 4px 12px rgba(255, 51, 102, 0.2);
+  }
+  
+  .dotvizion-toast-container .Toastify__toast--warning {
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+  }
+  
+  .dotvizion-toast-container .Toastify__toast--info {
+    box-shadow: 0 4px 12px rgba(51, 204, 255, 0.2);
+  }
+  
+  /* Personalização da barra de progresso */
+  .dotvizion-toast-container .Toastify__progress-bar {
+    height: 4px;
+  }
+  
+  /* Animação de entrada e saída personalizadas (opcional) */
+  .dotvizion-toast-container .Toastify__slide-enter--top-right {
+    animation-duration: 300ms;
+  }
+  
+  .dotvizion-toast-container .Toastify__slide-exit--top-right {
+    animation-duration: 200ms;
+  }

@@ -3,6 +3,8 @@ import './ContactForm.css';
 import { toast } from 'react-toastify';
 import { useMutation } from '@tanstack/react-query';
 import { CreateLead } from '../../utils';
+import DotVizionToast from '../ToastifyPersonalizado';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +38,7 @@ const ContactForm = () => {
   const { mutate } = useMutation({
     mutationFn: CreateLead,
     onSuccess: () => {
-      toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
+      DotVizionToast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
       setFormData({
         name: "",
         phone: "",
@@ -56,7 +58,7 @@ const ContactForm = () => {
           message: "",
         });
       } else {
-        toast.error(error.message);
+        DotVizionToast.error(error.message);
       }
     },
   });
