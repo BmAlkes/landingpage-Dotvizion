@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './ContactForm.css';
 import { toast } from 'react-toastify';
-// import { useMutation } from '@tanstack/react-query';
-// import { CreateLead } from '../../utils';
+import { useMutation } from '@tanstack/react-query';
+import { CreateLead } from '../../utils';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -29,25 +29,37 @@ const ContactForm = () => {
       toast.error("נא למלא את כל השדות");
       return;
     }
-    // mutate(formData);
+    mutate(formData);
     console.log(formData);
   };
 
-  // const { mutate } = useMutation({
-  //   mutationFn: CreateLead,
-  //   onSuccess: () => {
-  //     toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
-  //     setFormData({
-  //       name: "",
-  //       phone: "",
-  //       email: "",
-  //       message: "",
-  //     });
-  //   },
-  //   onError: (error:any) => {
-  //     toast.error(error.message);
-  //   },
-  // });
+  const { mutate } = useMutation({
+    mutationFn: CreateLead,
+    onSuccess: () => {
+      toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+      });
+    },
+    onError: (error:any) => {
+      // Verifica se é o erro específico de validação que podemos ignorar
+      if (error.message && error.message.includes("Notification validation failed")) {
+        // Ainda assim mostra sucesso pois os dados chegaram ao CRM
+        toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        toast.error(error.message);
+      }
+    },
+  });
 
   return (
     <section className="contact-section">
