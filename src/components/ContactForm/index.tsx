@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './ContactForm.css';
+import { toast } from 'react-toastify';
+import { useMutation } from '@tanstack/react-query';
+import { CreateLead } from '../../utils';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +23,7 @@ const ContactForm = () => {
   const handleSubmit = (e:any) => {
     e.preventDefault();
     // Handle form submission here
+    mutate(formData);
     console.log(formData);
     // Reset form
     setFormData({
@@ -31,6 +35,27 @@ const ContactForm = () => {
     // Show success message
     alert('Message sent successfully!');
   };
+
+  const { mutate } = useMutation({
+    mutationFn: CreateLead,
+    onSuccess: () => {
+      toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+      });
+    },
+    onError: (error:any) => {
+      toast.error(error.message);
+    },
+  });
+
+  
+
+
+
 
   return (
     <section className="contact-section">
