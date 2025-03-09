@@ -22,16 +22,15 @@ const ContactForm = () => {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    // Handle form submission here
+    const { name, email, message, phone } = formData;
+    
+
+    if (!name || !email || !message || !phone) {
+      toast.error("נא למלא את כל השדות");
+      return;
+    }
     mutate(formData);
     console.log(formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
   };
 
   const { mutate } = useMutation({
