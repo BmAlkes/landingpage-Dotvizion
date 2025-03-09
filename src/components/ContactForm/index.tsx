@@ -29,25 +29,25 @@ const ContactForm = () => {
       toast.error("נא למלא את כל השדות");
       return;
     }
-    mutate(formData);
+    // mutate(formData);
     console.log(formData);
   };
 
-  const { mutate } = useMutation({
-    mutationFn: CreateLead,
-    onSuccess: () => {
-      toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-      });
-    },
-    onError: (error:any) => {
-      toast.error(error.message);
-    },
-  });
+  // const { mutate } = useMutation({
+  //   mutationFn: CreateLead,
+  //   onSuccess: () => {
+  //     toast.success("ההודעה נשלחה בהצלחה! נחזור אליך בקרוב.");
+  //     setFormData({
+  //       name: "",
+  //       phone: "",
+  //       email: "",
+  //       message: "",
+  //     });
+  //   },
+  //   onError: (error:any) => {
+  //     toast.error(error.message);
+  //   },
+  // });
 
   return (
     <section className="contact-section">
