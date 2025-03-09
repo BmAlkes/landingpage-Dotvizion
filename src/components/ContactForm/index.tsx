@@ -32,8 +32,6 @@ const ContactForm = () => {
       phone: '',
       message: ''
     });
-    // Show success message
-    alert('Message sent successfully!');
   };
 
   const { mutate } = useMutation({
