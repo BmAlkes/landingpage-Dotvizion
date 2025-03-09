@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './ContactForm.css';
 import { toast } from 'react-toastify';
-import { useMutation } from '@tanstack/react-query';
-import { CreateLead } from '../../utils';
+// import { useMutation } from '@tanstack/react-query';
+// import { CreateLead } from '../../utils';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
