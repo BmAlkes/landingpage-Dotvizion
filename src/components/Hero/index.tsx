@@ -7,12 +7,12 @@ const HeroSection = () => {
       <div className="effectLeft"></div>
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="title-white">הפיכת</span>
+          <span className="title-white">אנחנו לוקחים את</span>
           <br />
-          <span className="title-orange">רעיונות</span>{" "}
-          <span className="title-blue">למצוינות</span>
+          <span className="title-orange">הרעיונות שלך והופכים אותם</span>{" "}
+          <span className="title-blue">למוצרים דיגיטליים</span>
           <br />
-          <span className="title-blue">דיגיטלית</span>
+          <span className="title-blue">מדהימים</span>
         </h1>
         <p className="hero-description">
           אנו יוצרים פתרונות דיגיטליים חדשניים שמניעים צמיחה ומעצימים את המותג

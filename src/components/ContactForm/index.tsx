@@ -64,15 +64,15 @@ const ContactForm = () => {
   });
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="container">
         <div className="contact-wrapper">
           {/* Transform text section */}
           <div className="transform-business-banner">
             <h2 className="transform-title">
-              <span className="title-light">מוכנים </span> <span className="title-blue">לשדרג את</span>
+              <span className="title-light">הלקוחות שלכם</span> <span className="title-blue">מחפשים אתכם</span>
               <br />
-              <span className="title-light">העסק </span> <span className="title-orange">שלכם ?</span>
+              <span className="title-light">עכשיו -</span> <span className="title-orange">תנו להם אתר מקצועי</span>
             </h2>
             <p className="transform-subtitle">
             בואו נבנה משהו מדהים יחד.

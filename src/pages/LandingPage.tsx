@@ -7,6 +7,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import HeroSection from "../components/Hero"
 import TestimonialsSection from "../components/TestimonialsSection"
+import WhatsApp from "../components/WhatsApp"
 
 
 const LandingPage = () => {
@@ -20,6 +21,7 @@ const LandingPage = () => {
        <TestimonialsSection />
     <ContactForm />
       <Footer />   
+      <WhatsApp/>
        {/* Banner de Consentimento de Cookies */}
        <CookieConsentManager />
     </div>

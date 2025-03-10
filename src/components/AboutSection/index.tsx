@@ -5,32 +5,40 @@ export const AboutSection = () => {
     <section id="who-we-are" dir="rtl">
       <div className="about-container">
         <div className="about-content">
-          <h2 className="about-title">מי אנחנו</h2>
+          <h2 className="about-title">
+            הצוות שמגשים את הרעיונות שלך למציאות דיגיטלית
+          </h2>
           <p className="about-description">
-            אנחנו צוות נלהב המוקדש ליצור חוויות דיגיטליות שמניעות תוצאות. עם
-            מומחיות בעיצוב אתרים, שיווק ומיתוג, אנחנו עוזרים לעסקים כמו שלך
-            לבלוט בעולם הדיגיטלי.
+            אנחנו לא עוד סטודיו לבניית אתרים. אנחנו יוצרים פתרונות דיגיטליים
+            חכמים שמביאים תוצאות לעסקים! עם ניסיון של שנים, אנחנו מספקים אתרים
+            ואפליקציות שמותאמים בדיוק לצרכים של הלקוחות שלנו – מעיצוב ייחודי ועד
+            טכנולוגיות מתקדמות. החזון שלנו הוא להפוך כל רעיון למציאות דיגיטלית
+            חדשנית, עם דגש על איכות, ביצועים ושירות אישי.
           </p>
 
           <div className="stats-container">
             <div className="stat-box">
               <h3 className="stat-number">5+</h3>
-              <p className="stat-description">שנות נסיון</p>
+              <p className="stat-description">ניסיון של +5 שנים בפיתוח אתרים ואפליקציות</p>
             </div>
 
             <div className="stat-box">
               <h3 className="stat-number">100+</h3>
-              <p className="stat-description">פרויקטים מוצלחים</p>
+              <p className="stat-description">לקוחות מרוצים מכל העולם</p>
             </div>
 
             <div className="stat-box">
               <h3 className="stat-number">50+</h3>
-              <p className="stat-description">לקוחות מרוצים</p>
+              <p className="stat-description">שנות ניסיון בפיתוח דיגיטלי</p>
             </div>
           </div>
-          <a href="https://www.dotvizion.com/about" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.dotvizion.com/about"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="learn-more-btn">
-              למידע נוסף<span className="arrow-icon">←</span>
+              התחילו את הפרויקט שלכם עכשיו<span className="arrow-icon">←</span>
             </button>
           </a>
         </div>
