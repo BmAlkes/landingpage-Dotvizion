@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="effectLeft"></div>
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="title-white">אנחנו לוקחים את</span>
+          <span className="title-white">לוקחים את</span>
           <br />
           <span className="title-orange">הרעיונות שלך והופכים אותם</span>{" "}
           <span className="title-blue">למוצרים דיגיטליים</span>
@@ -15,12 +15,13 @@ const HeroSection = () => {
           <span className="title-blue">מדהימים</span>
         </h1>
         <p className="hero-description">
-          אנו יוצרים פתרונות דיגיטליים חדשניים שמניעים צמיחה ומעצימים את המותג
-          שלך. מהעיצוב ועד הפיתוח, DotVizion היא השותפה שלך להצלחה.
+          אני לוקח את הרעיונות שלך והופך אותם למוצרים דיגיטליים מדהימים. אני
+          יוצר פתרונות חדשניים שמניעים צמיחה ומחזקים את המותג שלך. מהעיצוב ועד
+          הפיתוח – ב-DotVizion הרעיון שלך הופך למציאות.
         </p>
         <button className="learn-more-btn">
           <a href="https://www.dotvizion.com" target="_blank" rel="noreferrer">
-             עוד עלינו<span className="arrow-icon">←</span>
+            אודות dotivizion<span className="arrow-icon">←</span>
           </a>
         </button>
         <div className="clients-section">
@@ -51,13 +52,13 @@ const HeroSection = () => {
               className="avatar"
             />
           </div>
-          <p className="clients-text">100+ לקוחות ברחבי העולם סומכים עלינו</p>
+          <p className="clients-text">100+ לקוחות עלינו</p>
         </div>
       </div>
       <div className="hero-image">
         <div className="image-gradient-overlay">
           <img
-            src="https://res.cloudinary.com/landingpage2/image/upload/v1741372944/Frame_7_1_siispk.webp"
+            src="https://res.cloudinary.com/landingpage2/image/upload/v1741843760/WhatsApp_Image_2025-03-13_at_01.49.55_0be210b1_fmtjvr.webp"
             alt=""
             className="hero-main-image"
           />

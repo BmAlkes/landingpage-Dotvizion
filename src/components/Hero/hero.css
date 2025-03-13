@@ -50,11 +50,10 @@
   opacity: 0.85;
   max-width: 90%;
   font-weight: 300;
-  text-align: right;
-}
-
+  text-align: right;}
+  
 .learn-more-btn {
-  background-color: #ff8a00;
+  background-color:linear-gradient(to left, rgba(252,136,20,1) 0%, rgba(111,207,237,1) 0%)!important;
   color: white;
   border: none;
   padding: 0.7rem 1.4rem;

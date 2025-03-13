@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-[#030B0F]">
       <Header />
-      <HeroSection />
+      <HeroSection/>
       <FeaturesSection />
       <AboutSection />
       <FeaturedProjectsSlider/>

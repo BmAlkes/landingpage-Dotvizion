@@ -139,25 +139,14 @@ const ContactForm = () => {
               </div>
               
               <div className="form-submit">
-                <button type="submit" className="send-message-btn">
+                <button type="submit" className="contact-us-btn">
                    שלח<span className="arrow-icon">←</span>
                 </button>
               </div>
             </form>
           </div>
           
-          {/* Contact Info Button */}
-          <div className="contact-btn-wrapper">
-              <a href="mailto:info@dotvizion.com">
-            <button className="contact-us-btn">
-
-              <span>צור קשר איתנו</span>
-              <svg className="mail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </button>
-              </a>
-          </div>
+      
         </div>
       </div>
       
